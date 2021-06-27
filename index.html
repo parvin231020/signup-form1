@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Signup From</title>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="overlay"></div>
+	<i class="fab fa-accessible-icon moveIcon"></i>
+
+
+	<div class="container">
+		<div class="signup-form">
+		   
+			<h1>Signup Here</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. </p>
+
+			<form>
+				<input type="text" placeholder="Your Full Name">
+				<input type="email" placeholder="Email Address">
+				<input type="password" placeholder="Enter Password">
+				<input type="password" placeholder="Retype Password">
+
+                <strong>Select Gender</strong>
+                <div class="flex">
+                     <input type="radio" id="male" name="gender"><label for="male">Male</label>
+				     <input type="radio" id="female" name="gender"><label for="female">Female</label>
+				     <input type="radio" id="other" name="gender"><label for="other">Other</label>
+			    </div>
+
+
+                <strong>Select Subject</strong>
+                <div class="flex column">
+                	<div>
+                        <input name="subject" type="checkbox" id="webdesign"> <label for="webdesign">Webdesign</label>
+                    </div>
+                    <div>
+                        <input name="subject" type="checkbox" id="graphicdesign"> <label for="graphicdesign">Graphicdesign</label>
+                    </div>
+                    <div>
+                        <input name="subject" type="checkbox" id="reactjs"> <label for="reactjs">react js</label>
+                    </div>
+                    <div>
+                        <input name="subject" type="checkbox" id="wordpress"> <label for="wordpress">Wordpress</label>
+                    </div>
+                </div>
+
+                <strong>Select Country</strong>
+                <select name="country">
+                	<option value="USA">USA</option>
+                	<option value="UAE">UAE</option>
+                	<option value="BN">BN</option>
+                	<option value="CAN">CAN</option>
+                	<option value="CHI">CHI</option>
+                	<option value="THAI">THAI</option>
+                	<option value="IND">IND</option>
+                	<option value="PAK">PAK</option>
+                </select>
+
+                <textarea rows="7" placeholder="About Yourself"></textarea>
+                <button type="submit"><i class="fas fa-chevron-right"></i> Signup Now</button>
+				
+				
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+

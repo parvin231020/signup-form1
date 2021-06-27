@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+	background-image: url(../images/img-1.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+ }
+
+.container{
+	width: 700px;
+	margin: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	position: relative;
+	
+}
+.overlay{
+	background-color: #20bf55;
+    background-image: linear-gradient(137deg, rgba(253,255,254,1) 0%, rgba(29,233,187,1) 22%, rgba(17,87,237,0.7311799719887955) 99%);
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index:-1;
+    opacity: 0.8;
+}
+.flex{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.flex label{
+	margin: 0px 30px 14px 10px;
+	text-transform: capitalize;
+	align-items: center;
+}
+.flex div{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.column{
+	flex-direction: column;
+	align-items: flex-start;
+}
+.signup-form{
+	background-color:#fff;
+	padding: 80px 50px;
+	border-radius: 10px;
+	position: relative;
+}
+
+h1{
+	font-size: 38px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #black;
+	position: relative;
+}
+p{
+	text-align: center;
+	font-size: 14px;
+	font-weight: 300;
+	color: #222;
+	position: relative;
+}
+
+form{
+    padding: 30px 0;
+    position: relative;
+    z-index: 1;
+}
+input{
+	width: 100%;
+	padding: 5px 15px;
+	height: 60px;
+	font-size: 26px;
+	border-radius: 5px;
+	border: 2px solid #333333ab;
+	margin-bottom: 15px;
+}
+input[type="radio"],input[type=checkbox]{
+	width: 25px;
+	height: 25px;
+}
+label{
+	font-size: 20px;
+}
+strong{
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+select{
+	width: 100%;
+	padding: 5px 15px;
+	height: 60px;
+	font-size: 26px;
+	border-radius: 5px;
+	border: 2px solid #333333ab;
+	margin-bottom: 15px;
+}
+textarea{
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 26px;
+	border-radius: 5px;
+	border: 2px solid #333333ab;
+	margin-bottom: 15px;
+}
+button{
+	padding: 18px 50px;
+	border: 1px solid #0ba2e2;
+	font-size: 20px;
+	color: #fff;
+	border-radius: 5px;
+	background-color: #0ba2e2;
+
+}
+button:hover{
+	background-color: #fff;
+	color: #0ba2e2;;
+
+}
+
+
+.signup-form::before{
+	content:'';
+	width: 80%;
+	height: 40%;
+	background-color: #0193bd;
+	background-image: linear-gradient(143deg, #0193bd 0%, #01baef 30%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	border-bottom-right-radius: 100%;
+}
+.signup-form::after{
+	content:'';
+	width: 80%;
+	height: 40%;
+	background-color: #0193bd;
+	background-image: linear-gradient(143deg, #0193bd 0%, #01baef 30%);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index:0;
+	border-top-left-radius: 100%;
+}
+.moveIcon{
+	color: #fff;
+	font-size: 50px;
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	z-index: 10;
+	animation-name:Move;
+	animation-duration: 10s;
+	transform: rotate(0deg);
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+
+}
+@keyframes Move{
+	10%{
+		top: 30%;
+		left: 30%;
+		transform: rotate(50deg);
+	}
+	30%{
+		top: 10%;
+		left: 50%;
+		transform: rotate(-120deg);
+	}
+	60%{
+		top: 50%;
+		left: 80%;
+		transform: rotate(-220deg);
+	}
+	80%{
+		top: 30%;
+		left: 70%;
+		transform: rotate(120deg);
+	}
+	100%{
+		top: 60%;
+		left:90%;
+		transform: rotate(120deg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
